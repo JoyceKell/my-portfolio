@@ -1,0 +1,13 @@
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+  
+  .AboutMe a {
+    color: #007bff;
+    text-decoration: none;
+  }

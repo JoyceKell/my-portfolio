@@ -1,0 +1,16 @@
+
+  .Introduction__Content {
+    text-align: center;
+  }
+  
+  .Introduction__Image {
+    margin-left: 20px;
+  }
+
+  .Introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
