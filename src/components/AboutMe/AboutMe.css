@@ -5,9 +5,15 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
+  color: white;
+  background-color: #292430;
+}
+
+.AboutMe h2{
+  font-weight: 400;
 }
   
   .AboutMe a {
-    color: #007bff;
+    color: #F5D6C8;
     text-decoration: none;
   }

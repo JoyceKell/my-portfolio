@@ -1,18 +1,16 @@
 import React from "react";
 import './introduction.css'
+import DownloadButton from "../downloadButton/downloadButton";
 
 const Introduction = () => {
+  
   return (
-    <section className="Introduction">
+    <section className="Introduction  section-background">
       <div className="Introduction__Content">
-        <h1>Seu nome</h1>
-        <p>Seu cargo</p>
+        <h1>Joyce Silva</h1>
+        <p>Fullstack Web Developer</p>
+        <DownloadButton file="../../assets/cv.pdf"/>
       </div>
-      <img
-        className="Introduction__Image"
-        src="https://via.placeholder.com/150x150"
-        alt="Sua imagem"
-      />
     </section>
   );
 };

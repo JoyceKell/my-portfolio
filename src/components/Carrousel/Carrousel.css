@@ -5,4 +5,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F5D6C8;
+  }
+  
+  .Projects__Carousel{
+    border: 0;
+  }
+
+  .Project{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .carrousel-orientation{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+  }
+
+  .button-carrousel{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .button-carrousel :hover{
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
   }

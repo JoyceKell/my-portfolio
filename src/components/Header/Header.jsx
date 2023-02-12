@@ -6,9 +6,9 @@ const Header = (props) => {
       <nav>
         <ul>
           <li>
-            <button onClick={() => props.scrollToSection('Introduction')}>Introduction</button>
-            <button onClick={() => props.scrollToSection('Projects')}>Projects</button>
-            <button onClick={() => props.scrollToSection('AboutMe')}>footer</button>
+            <button className="button-6" onClick={() => props.scrollToSection('Introduction')}>Introduction</button>
+            <button className="button-6" onClick={() => props.scrollToSection('Projects')}>Projects</button>
+            <button className="button-6" onClick={() => props.scrollToSection('AboutMe')}>footer</button>
           </li>
         </ul>
       </nav>
