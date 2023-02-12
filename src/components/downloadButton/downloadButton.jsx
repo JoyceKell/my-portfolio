@@ -17,7 +17,7 @@ const DownloadButton = ({ file }) => {
 
   return (
     <button onClick={handleDownload} disabled={loading} className="button-13">
-      {loading ? "Downloading..." : "Download My CV"}
+      {loading ? "Downloading..." : "Download CV"}
     </button>
   );
 };
