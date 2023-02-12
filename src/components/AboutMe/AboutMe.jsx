@@ -23,7 +23,7 @@ const AboutMe = () => {
         <div>
           <img
             className="imagem"
-            src="../../assets/girl1.jpg"
+            src={require("../../assets/girl1.jpg")}
             alt="background"
           />
         </div>
