@@ -8,6 +8,7 @@ export default function Header(props) {
         <button onClick={() => props.scrollToSection("Introduction")}>
           Introduction
         </button>
+        <button onClick={() => props.scrollToSection("stack")}>Stack</button>
         <button onClick={() => props.scrollToSection("Projects")}>
           Projects
         </button>

@@ -4,6 +4,7 @@ import Carrousel from "./components/Carrousel/Carrousel";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Introduction from "./components/Introduction/Introduction";
 import Header from "./components/Header/Header";
+import Stack from "./components/Stacks/Stack";
 
 const LandingPage = () => {
   const scrollToSection = (sectionClass) => {
@@ -18,6 +19,7 @@ const LandingPage = () => {
     <div className="LandingPage">
       <Header scrollToSection={scrollToSection} />
       <Introduction />
+      <Stack />
       <Carrousel />
       <AboutMe />
     </div>
