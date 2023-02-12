@@ -1,40 +1,193 @@
 .Projects {
-    height: 100vh;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5d6c8;
+}
+
+.Projects__Carousel {
+  border: 0;
+}
+.Projects__Carousel .Project .view-project {
+  padding-top: 0.5rem;
+}
+.Projects__Carousel .Project img {
+  width: 37rem;
+  height: 20rem;
+}
+
+.imagemm:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s;
+}
+
+.imagemm:not(:hover) {
+  transform: scale(1);
+  transition: transform 0.6s;
+}
+
+.Projects__Carousel .Project span {
+  text-align: justify;
+  min-height: 8rem;
+  margin-top: 10px;
+}
+
+.Project {
+  width: 39rem;
+  height: 25rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Project h3 {
+  text-align: justify;
+  margin: 0;
+}
+
+.carrousel-orientation {
+  height: 34rem;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  align-items: center;
+}
+
+.button-carrousel {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-carrousel:hover {
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+.view-project:link,
+.view-project:visited {
+  color: black;
+  border: 2px solid #333333;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+.view-project:hover,
+.view-project:active {
+  background-color: #333333;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Projects__Carousel .Project img {
+    width: 25rem;
+    height: 15rem;
+  }
+  .Project {
+    width: 27rem;
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Projects {
+    height: auto;
+  }
+  .carrousel-orientation {
+    flex-direction: column;
     width: 100%;
-    overflow: hidden;
+    height: auto;
+    align-items: center;
+  }
+  .Projects__Carousel .Project img {
+    width: 20rem;
+    height: 10rem;
+  }
+  .Project {
+    width: 22rem;
+    height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Projects__Carousel .Project img {
+    width: 15rem;
+    height: 8rem;
+  }
+  .Project {
+    width: 17rem;
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Projects {
+    height: auto;
+  }
+  .carrousel-orientation {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #F5D6C8;
-  }
-  
-  .Projects__Carousel{
-    border: 0;
-  }
-
-  .Project{
-    width: 300px;
-    height: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+
+  .Projects__Carousel .Project img {
+    height: auto;
+  }
+
+  .Project {
+    width: 80%;
+  }
+
+  .carrousel-orientation {
+    height: auto;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
+}
 
-  .carrousel-orientation{
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    align-items: center;
+@media (max-width: 600px) {
+  .Projects {
+    height: 700px;
   }
 
-  .button-carrousel{
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
+  .Projects h2 {
+    margin-top: -100px;
   }
 
-  .button-carrousel :hover{
-    transform: translateY(-2px);
-    transition: all 0.2s ease-in-out;
+  .carrousel-orientation {
+    flex-direction: row;
+    height: 65%;
+    gap: 20px;
   }
+
+  .Projects__Carousel {
+    margin: 0 auto;
+  }
+
+  .Project {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .Project h3 {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .Projects__Carousel .Project span {
+    min-height: 10rem;
+    overflow: scroll;
+  }
+}

@@ -1,4 +1,3 @@
-
 .header {
   display: flex;
   justify-content: flex-end;
@@ -9,6 +8,28 @@
   left: 0;
   right: 0;
   z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -10vh;
+    position: sticky;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .btn-group button {
+    margin: 0.5rem 0;
+  }
 }
 
 .btn-group {
@@ -39,15 +60,13 @@
 .btn-group button:first-child {
   border-radius: 8px 0 0 8px;
   margin: 0;
-
 }
 .btn-group button:last-child {
   border-radius: 0 8px 8px 0;
   margin: 0;
-
 }
 .btn-group button:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -55,7 +74,6 @@
   right: 1px;
   bottom: -7px;
   z-index: 5;
-  pointer-event: none;
   cursor: pointer;
   box-shadow: 0 0 0 1px #000;
   transition: bottom 140ms linear;
@@ -77,4 +95,11 @@
 }
 .btn-group button:active:before {
   bottom: 0px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }

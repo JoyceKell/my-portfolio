@@ -1,14 +1,52 @@
 import React, { useState } from "react";
 import "./Carrousel.css";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import chamadosImg from "../../assets/chamados.png";
+import filmariaImg from "../../assets/filmaria.png";
+import advicePng from "../../assets/advice.png";
+import final from "../../assets/final.png";
 
 const Projects = () => {
   const projects = [
-    { title: "Projeto 1", description: "Descrição do projeto 1" },
-    { title: "Projeto 2", description: "Descrição do projeto 2" },
-    { title: "Projeto 3", description: "Descrição do projeto 3" },
-    { title: "Projeto 4", description: "Descrição do projeto 4" },
-    { title: "Projeto 5", description: "Descrição do projeto 5" },
+    {
+      title: "Sistema de chamados",
+      description:
+        "Sistema criado a fim de colocar em prática meus aprendizados. Utilizei firebase além de fazer deploy na Vercel.",
+      image: chamadosImg,
+      link: "https://react-js-do-zero-ao-avancado-na-pratica-8lk7.vercel.app/",
+      github:
+        "https://github.com/JoyceKell/ReactJs-do-zero-ao-avancado-na-pratica/tree/master/sistema-de-chamados",
+      button: "ver projeto no github",
+    },
+    {
+      title: "Filmaria",
+      description:
+        "Um projeto onde você pode visualizar alguns filmes, adicionar como favorito e(ou) ser redirecionado para os seus respectivos trailers, deploy realizado na netlify.",
+      image: filmariaImg,
+      link: "https://filmaria-projeto.netlify.app/",
+      github:
+        "https://github.com/JoyceKell/ReactJs-do-zero-ao-avancado-na-pratica/tree/master/filmaria",
+      button: "ver projeto no github",
+    },
+    {
+      title: "Advices",
+      description:
+        "Nesse projeto eu estava aprendendo a criar um dark-theme utilizando tailwind. O Sistema é básico, cosiste em clicar no botão e receber um conselho randomicamente.",
+      image: advicePng,
+      link: "https://advices-psi.vercel.app/",
+      github: "https://github.com/JoyceKell/advices",
+      button: "ver projeto no github",
+    },
+    {
+      title: "E por enquanto é isso!",
+      description:
+        "Ainda não possuo muitos projetos, mas espero alimentar esse portfólio logo, logo. As vezes é dificil conciliar trabalho e faculdade, mas não devemos nos esquecer de sempre procurar um tempinho para aprender mais :)",
+      image: final,
+      link: "",
+      github:
+        "https://www.youtube.com/watch?v=rqS2vFuU6SE&ab_channel=InternationalCat",
+      button: "ver vídeo de gatinhos fofos",
+    },
   ];
 
   const [currentProject, setCurrentProject] = useState(0);
@@ -35,7 +73,25 @@ const Projects = () => {
         <div className="Projects__Carousel">
           <div key={currentProject} className="Project">
             <h3>{projects[currentProject].title}</h3>
-            <p>{projects[currentProject].description}</p>
+            <a
+              target={"blank"}
+              className="imagemm"
+              href={
+                projects[currentProject].link
+                  ? projects[currentProject].link
+                  : null
+              }
+            >
+              <img src={projects[currentProject].image} />
+            </a>
+            <span>{projects[currentProject].description}</span>
+            <a
+              className="view-project"
+              target={"blank"}
+              href={projects[currentProject].github}
+            >
+              {projects[currentProject].button}
+            </a>
           </div>
         </div>
         <button

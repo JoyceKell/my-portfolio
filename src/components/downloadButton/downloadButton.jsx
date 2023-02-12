@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './downloadButton.css'
+import "./downloadButton.css";
 const DownloadButton = ({ file }) => {
   const [loading, setLoading] = useState(false);
 
@@ -16,7 +16,7 @@ const DownloadButton = ({ file }) => {
   };
 
   return (
-    <button onClick={handleDownload} disabled={loading} className="download_button">
+    <button onClick={handleDownload} disabled={loading} className="button-13">
       {loading ? "Downloading..." : "Download My CV"}
     </button>
   );

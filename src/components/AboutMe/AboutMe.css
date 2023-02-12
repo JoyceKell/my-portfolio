@@ -9,11 +9,58 @@
   background-color: #292430;
 }
 
-.AboutMe h2{
-  font-weight: 400;
+.info {
+  width: 60%;
+  text-align: justify;
 }
-  
-  .AboutMe a {
-    color: #F5D6C8;
-    text-decoration: none;
+
+.imagem {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin-left: 5rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .imagem {
+    width: 300px;
+    height: 300px;
+    text-align: justify;
+
   }
+
+  .info{
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutMe {
+    height: auto;
+  }
+
+  .info {
+    width: 100%;
+    text-align: center;
+    text-align: justify;
+  }
+
+  .imagem {
+    width: 150px;
+    height: 150px;
+    margin-left: 0rem;
+    padding-bottom: 3rem;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+}

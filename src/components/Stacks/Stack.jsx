@@ -6,9 +6,9 @@ import { AiFillGithub } from "react-icons/ai";
 
 const Stack = () => {
   return (
-    <div className="home">
+    <div className="home section-background stack-link">
       <div className="stack">
-        <h3 className="stack-title">My Technology Stack</h3>
+        <h3 className="stack-title">Principais Tecnologias</h3>
         <ul className="stack-list">
           <li className="stack-item">
             <DiReact size={50} className="image" />
@@ -30,10 +30,15 @@ const Stack = () => {
       </div>
       <div className="conteudo">
         <p>
-          Essas são as tecnologias que mais tenho contato, Há um tempo atrás,
-          tive a oportunidade de ter contato com outras tecnologias como Ruby on
-          Rails, Postgresql e Angular. Entretanto hoje me mantenho focada nessas
-          tecnologias citadas ao lado.
+          Essas são as minhas tecnologias favoritas e, consequentemente, as que
+          mais tenho contato atualmente. seja através de estudos, seja através
+          do trabalho.
+        </p>
+        <p>
+          No meu <a href="https://github.com/JoyceKell">Github</a> você pode
+          encontrar alguns projetos que fiz (no momento a maioria pessoais) e
+          conhecer melhor sobre as tecnologias e funcionalidades que tive
+          contato.
         </p>
       </div>
     </div>
