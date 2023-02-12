@@ -1,19 +1,18 @@
 import React from "react";
-import './header.css'
-const Header = (props) => {
+import "./header.css";
+
+export default function Header(props) {
   return (
-    <header className="Header">
-      <nav>
-        <ul>
-          <li>
-            <button className="button-6" onClick={() => props.scrollToSection('Introduction')}>Introduction</button>
-            <button className="button-6" onClick={() => props.scrollToSection('Projects')}>Projects</button>
-            <button className="button-6" onClick={() => props.scrollToSection('AboutMe')}>footer</button>
-          </li>
-        </ul>
-      </nav>
+    <header className="header">
+      <div className="btn-group">
+        <button onClick={() => props.scrollToSection("Introduction")}>
+          Introduction
+        </button>
+        <button onClick={() => props.scrollToSection("Projects")}>
+          Projects
+        </button>
+        <button onClick={() => props.scrollToSection("AboutMe")}>footer</button>
+      </div>
     </header>
   );
-};
-
-export default Header;
+}
