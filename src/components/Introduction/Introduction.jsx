@@ -8,10 +8,9 @@ const Introduction = () => {
       <div className="Introduction__Content">
         <h1>Joyce Silva</h1>
         <p>Fullstack Web Developer</p>
-        <DownloadButton file="https://dl.dropboxusercontent.com/s/lo9k84cfkb6u6z3/joyce-pt.docx.pdf?dl=0" />
+        <DownloadButton file="https://dl.dropboxusercontent.com/s/lo9k84cfkb6u6z3/joycept.pdf?dl=0" />
       </div>
     </section>
   );
 };
-
 export default Introduction;
