@@ -3,12 +3,15 @@ import "./stack.css";
 import { DiReact, DiMongodb } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 const Stack = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="home section-background stack-link">
       <div className="stack">
-        <h3 className="stack-title">Principais Tecnologias</h3>
+        <h3 className="stack-title">{t("Stack")}</h3>
         <ul className="stack-list">
           <li className="stack-item">
             <DiReact size={50} className="image" />
@@ -29,16 +32,10 @@ const Stack = () => {
         </ul>
       </div>
       <div className="conteudo">
+        <p>{t("Stack text 1")}</p>
         <p>
-          Essas são as minhas tecnologias favoritas e, consequentemente, as que
-          mais tenho contato atualmente. seja através de estudos, seja através
-          do trabalho.
-        </p>
-        <p>
-          No meu <a href="https://github.com/JoyceKell">Github</a> você pode
-          encontrar alguns projetos que fiz (no momento a maioria pessoais) e
-          conhecer melhor sobre as tecnologias e funcionalidades que tive
-          contato.
+          {t("In My")} <a href="https://github.com/JoyceKell">Github</a>{" "}
+          {t("Stack text 2")}
         </p>
       </div>
     </div>

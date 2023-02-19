@@ -94,6 +94,7 @@
   .Project {
     width: 27rem;
     height: 20rem;
+    font-size: 13px;
   }
 }
 
@@ -114,6 +115,7 @@
   .Project {
     width: 22rem;
     height: 15rem;
+    font-size: 13px;
   }
 }
 

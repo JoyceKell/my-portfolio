@@ -59,10 +59,15 @@
   .home {
     height: 100%;
     flex-direction: column;
+    font-size: 15px;
   }
 
   .conteudo {
     width: 80%;
     margin-bottom: 10vh;
+  }
+
+  .conteudo p {
+    font-size: 15px;
   }
 }

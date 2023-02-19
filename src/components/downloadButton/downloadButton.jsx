@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./downloadButton.css";
+import { useTranslation } from "react-i18next";
+
 const DownloadButton = ({ file }) => {
   const [loading, setLoading] = useState(false);
+  const { t } = useTranslation();
 
   const handleDownload = async () => {
     setLoading(true);
@@ -17,7 +20,7 @@ const DownloadButton = ({ file }) => {
 
   return (
     <button onClick={handleDownload} disabled={loading} className="button-13">
-      {loading ? "Downloading..." : "Download CV"}
+      {loading ? "Downloading..." : t("resume")}
     </button>
   );
 };
