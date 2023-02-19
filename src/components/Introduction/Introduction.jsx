@@ -8,7 +8,7 @@ const Introduction = () => {
       <div className="Introduction__Content">
         <h1>Joyce Silva</h1>
         <p>Fullstack Web Developer</p>
-        <DownloadButton file="https://dl.dropboxusercontent.com/s/3o8dtlg5wuiq35o/curriculo-pt.pdf" />
+        <DownloadButton file="https://dl.dropboxusercontent.com/scl/fi/mcw9jy0090njxe5dg62pu/joyce-pt.docx?dl=0&rlkey=x9r2lrpf5phuywk47h5bg987f" />
       </div>
     </section>
   );
