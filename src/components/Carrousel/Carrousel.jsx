@@ -4,6 +4,7 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import chamadosImg from "../../assets/chamados.png";
 import filmariaImg from "../../assets/filmaria.png";
 import advicePng from "../../assets/advice.png";
+import jogoDaVelha from "../../assets/jogodavelha.png";
 import final from "../../assets/final.png";
 
 const Projects = () => {
@@ -35,6 +36,15 @@ const Projects = () => {
       image: advicePng,
       link: "https://advices-psi.vercel.app/",
       github: "https://github.com/JoyceKell/advices",
+      button: "ver projeto no github",
+    },
+    {
+      title: "Jogo da velha",
+      description:
+        "Apenas um jogo da velha criado em React, utilizando bootstrap e css",
+      image: jogoDaVelha,
+      link: "https://jogo-da-velha-beta-eight.vercel.app/",
+      github: "https://github.com/JoyceKell/jogo-da-velha",
       button: "ver projeto no github",
     },
     {
