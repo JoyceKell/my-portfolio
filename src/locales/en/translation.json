@@ -1,6 +1,8 @@
 {
   "resume": "Download my cv",
   "Home": "Home",
+  "To-Do List": "To-Do List",
+  "Desc To-do": "This is a task list project created using React and styled with Tailwind. It allows the user to add, edit and delete tasks.",
   "About Me": "About Me",
   "Stack": "Stack",
   "Projects": "Projects",

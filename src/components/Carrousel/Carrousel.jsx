@@ -6,6 +6,7 @@ import filmariaImg from "../../assets/filmaria.png";
 import advicePng from "../../assets/advice.png";
 import jogoDaVelha from "../../assets/jogodavelha.png";
 import final from "../../assets/final.png";
+import toDo from "../../assets/todo.png";
 import "./Carrousel.css";
 
 const Projects = () => {
@@ -19,6 +20,14 @@ const Projects = () => {
       link: "https://react-js-do-zero-ao-avancado-na-pratica-8lk7.vercel.app/",
       github:
         "https://github.com/JoyceKell/ReactJs-do-zero-ao-avancado-na-pratica/tree/master/sistema-de-chamados",
+      button: t("Button Github"),
+    },
+    {
+      title: t("To-Do List"),
+      description: t("Desc To-do"),
+      image: toDo,
+      link: "https://todo-list-app-alpha-ashy.vercel.app/",
+      github: "https://github.com/JoyceKell/todo-list-app",
       button: t("Button Github"),
     },
     {

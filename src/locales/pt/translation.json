@@ -1,6 +1,8 @@
 {
   "resume": "Baixar meu cv",
+  "To-Do List": "Lista de Afazeres",
   "Home": "Inicio",
+  "Desc To-do": "Este é um projeto de lista de tarefas criado usando React e estilizado com Tailwind. Ele permite que o usuário adicione, edite e exclua tarefas.",
   "About Me": "Sobre Mim",
   "Stack": "Stack",
   "Projects": "Projetos",
